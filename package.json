@@ -1,5 +1,5 @@
 {
-  "name": "react-native-sockets",
+  "name": "react-native-sockets-antago",
   "version": "0.0.4",
   "description": "Socket server and client bindings for React Native (Android)",
   "main": "index.android.js",

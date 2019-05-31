@@ -1,4 +1,4 @@
-# react-native-sockets
+# react-native-sockets-antago
 Java Socket Native Plugin for React Native for Android
 
 This is a basic implementation of Java sockets on Android allowing running a native socket server and client.
@@ -14,7 +14,7 @@ Requires RN 0.47 or higher
 #### Step 1 - NPM Install
 
 ```shell
-npm install --save react-native-sockets
+npm install --save react-native-sockets-antago
 ```
 #### Step 2 - Update Gradle Settings
 
@@ -171,7 +171,7 @@ import Sockets from 'react-native-sockets';
 Returns an array of ip address for the device.
 ```js
     Sockets.getIpAddress(ipList => {
-      console.log('Ip address list', ipList);  
+      console.log('Ip address list', ipList);
     }, err => {
       console.log('getIpAddress_error', err);
     })
