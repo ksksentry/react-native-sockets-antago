@@ -98,11 +98,12 @@ public class SocketClient {
             protected Void doInBackground(String... params) {
                 try {
                     String message = params[0];
-                    OutputStream outputStream = clientSocket.getOutputStream();
-                    PrintStream printStream = new PrintStream(outputStream);
-                    printStream.print(message + (char) EOT);
-                    printStream.flush();
-                    //debug log
+                    if (clientSocket != null) {
+                        OutputStream outputStream = clientSocket.getOutputStream();
+                        PrintStream printStream = new PrintStream(outputStream);
+                        printStream.print(message + (char) EOT);
+                        printStream.flush();
+                    }
                     Log.d(eTag, "client sent message: " + message);
                 } catch (IOException e) {
                     handleIOException(e);
